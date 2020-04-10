@@ -1,0 +1,14 @@
+
+apply plugin: 'checkstyle'
+
+
+checkstyle {
+    toolVersion '7.8.1'
+    configFile file("${rootProject.projectDir}/gradle/checkstyle/checkstyle.xml")
+}
+checkstyleMain {
+    source ='src/main/java'
+}
+checkstyleTest {
+    source ='src/test/java'
+}
