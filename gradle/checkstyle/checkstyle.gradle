@@ -7,6 +7,7 @@ checkstyle {
     configFile file("${rootProject.projectDir}/gradle/checkstyle/checkstyle.xml")
 }
 checkstyleMain {
+//    println configFile
     source ='src/main/java'
 }
 checkstyleTest {

@@ -8,6 +8,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+/**
+ * 测试类
+ */
 @DisplayName("A BowlingGame")
 class BowlingGameTest {
 
@@ -24,6 +27,9 @@ class BowlingGameTest {
         assertTrue(game != null);
     }
 
+    /**
+     * 测试类
+     */
     @Nested
     @DisplayName("when rolled")
     class Rolls {
@@ -43,6 +49,9 @@ class BowlingGameTest {
             game.roll(10);
         }
 
+        /**
+         * 测试类
+         */
         @Nested
         @DisplayName("and no pins knocked down")
         class NoPinsKnockedDown {
@@ -56,6 +65,9 @@ class BowlingGameTest {
             }
         }
 
+        /**
+         * 测试类
+         */
         @Nested
         @DisplayName("one pin each time")
         class OnlyOnesRolled {
@@ -69,6 +81,9 @@ class BowlingGameTest {
             }
         }
 
+        /**
+         * 测试类
+         */
         @Nested
         @DisplayName("a spare and 3 pins afterwards")
         class OneSpareRolled {
@@ -84,6 +99,9 @@ class BowlingGameTest {
             }
         }
 
+        /**
+         * 测试类
+         */
         @Nested
         @DisplayName("a strike, 4 and 3 pins afterwards")
         class OneStrikeRolled {
@@ -100,6 +118,9 @@ class BowlingGameTest {
             }
         }
 
+        /**
+         * 测试类
+         */
         @Nested
         @DisplayName("a perfect game")
         class PerfectGame {

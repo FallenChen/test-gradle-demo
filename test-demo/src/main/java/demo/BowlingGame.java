@@ -1,5 +1,8 @@
 package demo;
 
+/**
+ * 牛逼
+ */
 public class BowlingGame {
     private final int[] rolls = new int[21];
     private int currentRoll;
@@ -15,12 +18,10 @@ public class BowlingGame {
             if (isStrike(frameIndex)) {
                 score += 10 + strikeBonus(frameIndex);
                 frameIndex++;
-            }
-            else if (isSpare(frameIndex)) {
+            } else if (isSpare(frameIndex)) {
                 score += 10 + spareBonus(frameIndex);
                 frameIndex += 2;
-            }
-            else {
+            } else {
                 score += sumOfBallsInFrame(frameIndex);
                 frameIndex += 2;
             }
